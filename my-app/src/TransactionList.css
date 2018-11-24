@@ -1,0 +1,25 @@
+.transaction-list {
+ overflow: scroll;
+ margin: 0;
+ padding: 0;
+ -webkit-overflow-scrolling: touch;
+ height: 500px;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.transaction-list-wrapper {
+  background-image: linear-gradient(to left top, #4fa8d3, #5092c4, #547db2, #58689d, #595386);
+  width: 100%;
+  position: absolute;
+  top: 72px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.transaction-list li {
+  margin: 0;
+  padding: 0;
+}

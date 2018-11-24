@@ -1,0 +1,14 @@
+.MainScreen {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left top, #4fa8d3, #5092c4, #547db2, #58689d, #595386);
+  width: 100%;
+  position: absolute;
+  top: 72px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.MainScreen-details {
+  color: rgba(255, 255, 255, 1);
+}
