@@ -5,6 +5,7 @@ import NavBar from "./NavBar.js";
 import MainScreen from "./MainScreen.js";
 import TransactionList from "./TransactionList.js";
 import PaymentScreen from "./PaymentScreen.js";
+import IncomeScreen from "./IncomeScreen.js";
 
 class App extends Component {
 
@@ -40,6 +41,14 @@ class App extends Component {
                 <NavBar
                 data={this.state.userData}></NavBar>
                 <PaymentScreen></PaymentScreen>
+              </div>
+          )}/>
+
+          <Route exact path="/income" render={() => (
+              <div>
+                <NavBar
+                data={this.state.userData}></NavBar>
+                <IncomeScreen></IncomeScreen>
               </div>
           )}/>
 

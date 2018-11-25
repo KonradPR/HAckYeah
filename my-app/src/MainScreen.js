@@ -29,7 +29,7 @@ componentDidMount() {
 
         </div>
         <h2 className="MainScreen-details">Last Transactions</h2>
-        {this.state.transactions.map((transaction) => (
+        {this.state.transactions.slice(0,3).map((transaction) => (
           <Transaction transaction={transaction}/>
         ))}
         </div>

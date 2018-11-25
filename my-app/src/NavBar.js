@@ -22,7 +22,7 @@ class NavBar extends Component {
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Home</Link></li>
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/transaction-list">Transactions</Link></li>
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/payments">Payments</Link></li>
-              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
+              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/income">Income</Link></li>
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
           </ul>
           <span className="nav-logo">AIdvisor</span>
