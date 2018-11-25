@@ -19,13 +19,14 @@ class NavBar extends Component {
         <nav className="navbar">
         <FontAwesomeIcon className="navbar-toggle" icon="bars" onClick={this.navbar_toggle}/>
           <ul className="nav-main">
-              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
-              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
-              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
+              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Home</Link></li>
+              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/transaction-list">Transactions</Link></li>
+              <li><Link className="nav-links" onClick={this.navbar_toggle} to="/payments">Payments</Link></li>
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
               <li><Link className="nav-links" onClick={this.navbar_toggle} to="/">Link</Link></li>
           </ul>
           <span className="nav-logo">AIdvisor</span>
+          <span className="nav-logo-name">{this.props.data.accountNameClient}</span>
         </nav>
       )
     }

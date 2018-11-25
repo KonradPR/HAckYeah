@@ -6,20 +6,29 @@ import Transaction from './Transaction.js'
 class MainScreen extends Component {
 
 state ={
-    transactions: []
+    transactions: [],
+    userData: {},
 }
 
 componentDidMount() {
-  fetch("http://40.115.42.17:8080/last/1/00006667/4")
+  fetch("http://40.115.42.17:8080/last/1/00006667/3")
   .then(res => res.json())
-  .then(res => res.transactions)
   .then(res => {this.setState({transactions : res})})
+  .then(
+  fetch("http://40.115.42.17:8080/name/1/00006667")
+  .then(res => res.json())
+  .then(res => {this.setState({userData: res})}));
 }
 
   render() {
     return(
         <div className="MainScreen">
-        <h2 className="MainScreen-details">Ostatnie Transakcje</h2>
+        <div className="MainScreen-userData">
+          <p className="MainScreen-userData-balance">{this.state.userData.bookingBalance+" PLN"}</p>
+          <p>{this.state.userData.accountNumber}</p>
+
+        </div>
+        <h2 className="MainScreen-details">Last Transactions</h2>
         {this.state.transactions.map((transaction) => (
           <Transaction transaction={transaction}/>
         ))}

@@ -12,3 +12,13 @@
 .MainScreen-details {
   color: rgba(255, 255, 255, 1);
 }
+
+.MainScreen-userData {
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    padding-left: 50px;
+}
+
+.MainScreen-userData-balance {
+  font-size: 2.5em;
+}

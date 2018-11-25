@@ -27,6 +27,8 @@
 .navbar-toggle {
  color: rgba(255, 255, 255, 0.7);
   font-size: 3.4em;
+  position: relative;
+  right:120px;
 }
 
 .navbar-toggle:hover {
@@ -40,8 +42,16 @@
 .nav-logo {
   color: rgba(255, 255, 255, 1);
   right: 70px;
-  top: 30px;
+  top: 15px;
   position: absolute;
+  font-weight: bold;
+}
+
+.nav-logo-name {
+  color: rgba(255, 255, 255, 1);
+  right: 60px;
+  position: absolute;
+  top:47px;
   font-weight: bold;
 }
 
