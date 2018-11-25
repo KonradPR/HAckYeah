@@ -14,15 +14,16 @@
 }
 
 .incomeScreen-barChart {
-  background-color: red;
   margin: auto;
   height: 4%;
   width: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.3);
 }
 
 .incomeScreen-barChart-bar {
   z-index: 9;
   height: 100%;
-  width: 60%;
-  background-color: green;
+  background-image: linear-gradient(to right, #b86ecd, #a870cc, #9971c9, #8971c5, #7b71c0);
 }

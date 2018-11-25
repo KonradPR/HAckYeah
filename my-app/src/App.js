@@ -44,7 +44,7 @@ class App extends Component {
               </div>
           )}/>
 
-          <Route exact path="/income" render={() => (
+          <Route exact path="/balance" render={() => (
               <div>
                 <NavBar
                 data={this.state.userData}></NavBar>
