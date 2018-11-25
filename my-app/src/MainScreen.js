@@ -18,6 +18,16 @@ componentDidMount() {
   fetch("http://40.115.42.17:8080/name/1/00006667")
   .then(res => res.json())
   .then(res => {this.setState({userData: res})}));
+  this.countdown = setInterval(() => {
+    fetch("http://40.115.42.17:8080/name/1/00006667")
+      .then(res => res.json())
+      .then(res => {if(res!==this.state.userData){
+        this.setState({userData:res})
+
+     }}).then(fetch("http://40.115.42.17:8080/last/1/00006667/3")
+     .then(res => res.json())
+     .then(res => {this.setState({transactions : res})}));
+  }, 10000);
 }
 
   render() {

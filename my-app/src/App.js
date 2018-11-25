@@ -11,6 +11,14 @@ class App extends Component {
 
   state = {userData: {}}
 
+//    timer: () => {
+  //    fetch("http://40.115.42.17:8080/name/1/00006667")
+  //      .then(res => res.json())
+    //    .then(res => {if(res!==this.state.userData){
+    //      this.setState({userData:res});
+    //   }})
+  //  }
+
   componentDidMount() {
     fetch("http://40.115.42.17:8080/name/1/00006667")
       .then(res => res.json())
